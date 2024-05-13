@@ -1,0 +1,54 @@
+@model Dish
+<form asp-action="AddDish" method="post">
+    <div class="container">
+        
+        <div class="row justify-content-center mb-4">
+        <div class="col text-center">
+            <h1 class="h2">Add a dish</h1>
+            <hr> <!-- Ligne -->
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="Name" class="form-label"> Name</label>
+                    <input type="text" class="form-control" id="Name" asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                        <label for="ChefId" class="form-label">Chef</label>
+                        <select class="form-control" id="ChefId" asp-for="ChefId">
+                            <option value="">Select a Chef</option>
+                            @if (ViewBag.AllChefs != null)
+                            {
+                                foreach(var c in ViewBag.AllChefs)
+                                {
+                                    <option value="@c.ChefId">@c.Name</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="ChefId" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="Calories" class="form-label"># of Calories:</label>
+                    <input type="number" class="form-control" id="Calories" asp-for="Calories" />
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="Tastiness" class="form-label">Tastiness:</label>
+                    <input type="number" class="form-control" id="Tastiness" asp-for="Tastiness" />
+                    <span asp-validation-for="Tastiness" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-4 text-end">
+                <button type="submit" class="btn btn-primary">Add Dish</button>
+            </div>
+        </div>
+    </div>
+</form>

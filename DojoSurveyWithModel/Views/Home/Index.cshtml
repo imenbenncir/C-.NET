@@ -1,0 +1,42 @@
+﻿﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-center mb-4">Fill out this survey</h1>
+            <form action="/process" method="post">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" name="Name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="Location" class="form-label">Location</label>
+                    <select name="Location" class="form-select">
+                        <option value="San Jose">San Jose</option>
+                        <option value="Burbank">Burbank</option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Dallas">Dallas</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="FavLang" class="form-label">Favorite Language</label>
+                    <select name="FavLang" class="form-select">
+                        <option value="C#">C#</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="Rust">Ruby</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="Comment" class="form-label">Comment</label>
+                    <textarea name="Comment" class="form-control"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <h1>Login</h1>
+    <form method="post" asp-action="SetName" class="mb-4">
+        <div class="form-group">
+            <label for="name mb-2">Enter your name</label>
+            <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

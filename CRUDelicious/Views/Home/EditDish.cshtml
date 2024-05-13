@@ -1,0 +1,62 @@
+@model Dish
+<h2>Edit "@Model.ChefName"</h2>
+<form asp-action="UpdateDish" asp-route-dishId="@Model.Id">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1 class="navbar-text">Edit @Model.ChefName</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-2 text-center">
+                <a class="btn btn-link-lg" href="/">Home</a>
+            </div>
+            <div class="col-md-1 text-center">
+                <span>|</span>
+            </div>
+            <div class="col-md-2 text-center">
+                <a class="btn btn-link-lg" href="/Dishs/new">Add Dish</a>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h1 class="mb-4">Edit Dish</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="ChefName" class="form-label">Chef's Name:</label>
+                    <input type="text" class="form-control" id="ChefName" asp-for="ChefName" />
+                    <span asp-validation-for="ChefName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="NameofDish" class="form-label">Name of Dish:</label>
+                    <input type="text" class="form-control" id="NameofDish" asp-for="NameofDish" />
+                </div>
+                <div class="mb-3">
+                    <label for="Calories" class="form-label"># of Calories:</label>
+                    <input type="number" class="form-control" id="Calories" asp-for="Calories" />
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="Tastiness" class="form-label">Tastiness:</label>
+                    <input type="number" class="form-control" id="Tastiness" asp-for="Tastiness" />
+                    <span asp-validation-for="Tastiness" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <label for="Description" class="form-label">Description:</label>
+                    <textarea class="form-control" id="Description" asp-for="Description" rows="6"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-4 text-end">
+                <button type="submit" class="btn btn-primary">Edit Dish</button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,15 @@
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\bin\Debug\net6.0\Fundamentals-2.exe
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\bin\Debug\net6.0\Fundamentals-2.deps.json
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\bin\Debug\net6.0\Fundamentals-2.runtimeconfig.json
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\bin\Debug\net6.0\Fundamentals-2.dll
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\bin\Debug\net6.0\Fundamentals-2.pdb
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.csproj.AssemblyReference.cache
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.AssemblyInfoInputs.cache
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.AssemblyInfo.cs
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.csproj.CoreCompileInputs.cache
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.dll
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\refint\Fundamentals-2.dll
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.pdb
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\Fundamentals-2.genruntimeconfig.cache
+C:\Users\MSI\OneDrive\Bureau\CODING DOJO\C#.NET\Fundamentals-2\obj\Debug\net6.0\ref\Fundamentals-2.dll

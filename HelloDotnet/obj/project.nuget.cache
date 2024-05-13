@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "W+AnD6jE5kgXmvRD0ptmB4bqngdrZ1G5qMZcDNi14P0/vIgh1yUQO+g9Q9QAKA8Oz1jSldTm94GyMlsVVTHQUQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MSI\\OneDrive\\Bureau\\CODING DOJO\\C#.NET\\HelloDotnet\\HelloDotnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}

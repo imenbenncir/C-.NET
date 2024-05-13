@@ -1,0 +1,19 @@
+@model Login
+<div class="flex-1 m-3">
+        <h2> Login</h2>
+        <form asp-action="Login" asp-controller="Home" method="post">
+            <div class="mb-3">
+                <label class="form-label" asp-for="LoginEmail"></label>
+                <input class="form-control" asp-for="LoginEmail">
+                <span class="text-danger" asp-validation-for="LoginEmail"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" asp-for="Password"></label>
+                <input class="form-control" asp-for="Password">
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Login" class="btn btn-info">
+            </div>
+        </form>
+</div>

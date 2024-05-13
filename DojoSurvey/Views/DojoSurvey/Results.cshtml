@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Survey Results</h1>
+        <div class="mb-3">
+            <p>Name: @ViewData["Name"]</p>
+            <p>Location: @ViewData["Location"]</p>
+            <p>Favorite Language: @ViewData["FavLang"]</p>
+            <p>Comment: @ViewData["Comment"]</p>
+        </div>
+        <a href="/" class="btn btn-primary">Go Back</a>
+    </div>
+</body>
+</html>

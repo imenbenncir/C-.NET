@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container">
+    <h2>Hello, @Context.Session.GetString("Name")</h2>
+    <p>Number: @ViewData["Number"]</p>
+
+    <form method="post" asp-action="Calculate" class="mb-4">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="submit" name="operation" value="+1" class="btn btn-primary">+1</button>
+            <button type="submit" name="operation" value="-1" class="btn btn-primary">-1</button>
+            <button type="submit" name="operation" value="x2" class="btn btn-primary">x2</button>
+            <button type="submit" name="operation" value="random" class="btn btn-primary">Random</button>
+        </div>
+    </form>
+
+    <form method="post" asp-action="Logout">
+        <button type="submit" class="btn btn-danger">Logout</button>
+    </form>
+</div>

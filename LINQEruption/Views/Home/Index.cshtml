@@ -1,0 +1,87 @@
+﻿@model List<LINQEruption.Models.Eruption>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <h2>LINQ Eruption !</h2>
+    <ul class="list-group">
+        <li class="list-group-item">First eruption in Chile: @(Model?.FirstOrDefault(e => e.Location == "Chile")?.ToString() ?? "No eruption in Chile")</li>
+        <li class="list-group-item">First eruption from Hawaiian Is: @(Model?.FirstOrDefault(e => e.Location == "Hawaiian Is")?.ToString() ?? "No Hawaiian Is Eruption found.")</li>
+        <li class="list-group-item">First eruption from Greenland: @(Model?.FirstOrDefault(e => e.Location == "Greenland")?.ToString() ?? "No Greenland Eruption found.")</li>
+        <li class="list-group-item">First eruption after 1900 in New Zealand: @(Model?.FirstOrDefault(e => e.Year > 1900 && e.Location == "New Zealand")?.ToString() ?? "No eruption after 1900 in New Zealand")</li>
+        
+        <li class="list-group-item">Eruptions with elevation over 2000m:
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (LINQEruption.Models.Eruption eruption in Model.Where(e => e?.ElevationInMeters > 2000))
+                    {
+                        <li class="list-group-item">@eruption?.ToString()</li>
+                    }
+                }
+            </ul>
+        </li>
+        <li class="list-group-item">Eruptions with volcano names starting with 'L':
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (LINQEruption.Models.Eruption eruption in Model.Where(e => !string.IsNullOrEmpty(e?.Volcano) && e.Volcano.StartsWith("L")))
+                    {
+                        <li class="list-group-item">@eruption?.ToString()</li>
+                    }
+                }
+            </ul>
+            <li class="list-group-item">Number of eruptions starting with 'L': @(Model?.Count(e => !string.IsNullOrEmpty(e?.Volcano) && e.Volcano.StartsWith("L")) ?? 0)</li>
+        </li>
+        <li class="list-group-item">Highest elevation: @(Model?.Max(e => e?.ElevationInMeters) ?? 0)</li>
+        <li class="list-group-item">Volcano with the highest elevation: @(Model?.OrderByDescending(e => e?.ElevationInMeters).FirstOrDefault()?.Volcano ?? "No volcanoes found")</li>
+        <li class="list-group-item">Volcano names alphabetically:
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (string volcano in Model.OrderBy(e => e?.Volcano).Select(e => e?.Volcano).Distinct())
+                    {
+                        <li class="list-group-item">@volcano</li>
+                    }
+                }
+            </ul>
+        </li>
+        <li class="list-group-item">Sum of all elevations: @(Model?.Sum(e => e?.ElevationInMeters) ?? 0)</li>
+        <li class="list-group-item">Did any volcanoes erupt in the year 2000? @(Model?.Any(e => e != null && e.Year == 2000) ?? false ? "Yes" : "No")</li>
+        <li class="list-group-item">First three stratovolcanoes:
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (LINQEruption.Models.Eruption volcano in Model.Where(e => e?.Type == "Stratovolcano").Take(3))
+                    {
+                        <li class="list-group-item">@volcano?.ToString()</li>
+                    }
+                }
+            </ul>
+        </li>
+        <li class="list-group-item">Eruptions before the year 1000 CE alphabetically by Volcano name:
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (LINQEruption.Models.Eruption eruption in Model.Where(e => e?.Year < 1000).OrderBy(e => e?.Volcano))
+                    {
+                        <li class="list-group-item">@eruption?.ToString()</li>
+                    }
+                }
+            </ul>
+        </li>
+        <li class="list-group-item">Volcano names of eruptions before the year 1000 CE:
+            <ul class="list-group">
+                @if (Model != null)
+                {
+                    @foreach (string volcano in Model.Where(e => e?.Year < 1000).OrderBy(e => e?.Volcano).Select(e => e?.Volcano).Distinct())
+                    {
+                        <li class="list-group-item">@volcano</li>
+                    }
+                }
+            </ul>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "XykQQhEA+80oZarbGx3uE086G9mhcuMmaeGK9iamKS80W5AGVJJPvzedI9bM0SRQa6vBNnuyr3DOhawZOrwRpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MSI\\OneDrive\\Bureau\\CODING DOJO\\C#.NET\\Fundamentals-2\\Fundamentals-2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\MSI\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
